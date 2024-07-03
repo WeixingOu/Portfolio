@@ -1,0 +1,28 @@
+.card {
+    width: 24rem;
+    height: 48rem;
+    box-shadow: 5px 5px 0px var(--black);
+    border: 2px solid var(--black);
+    border-radius: .5rem;
+}
+
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+.online path {
+    color: var(--white);
+}
+
+.online:hover path {
+    color: var(--main);
+}
+
+.github:hover path {
+    color: var(--white);
+}
+
+.card-footer {
+    border-color: var(--black);
+}

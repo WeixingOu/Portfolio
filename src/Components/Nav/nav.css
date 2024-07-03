@@ -1,0 +1,48 @@
+nav {
+    box-shadow: 0 .4rem 0rem var(--black);
+    background-color: var(--white);
+}
+
+.border {
+    --bs-border-color: var(--black);
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--main);
+}
+
+@media screen and (min-width: 992px) {
+    nav {
+        box-shadow: 5px 5px 0px var(--black);
+        max-width: fit-content;
+        border: 2px solid var(--black);
+        border-radius: .5rem;
+    }
+
+    .hover-underline-animation {
+        display: inline-block;
+        position: relative;
+    }
+    
+    .hover-underline-animation:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 7px;
+        left: 0;
+        background-color: var(--main);
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+    }
+    
+    .hover-underline-animation:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}

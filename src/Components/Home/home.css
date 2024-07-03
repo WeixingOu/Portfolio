@@ -1,0 +1,26 @@
+header {
+    max-width: 90%;
+    margin: 4.5rem auto;
+}
+
+.header-title {
+    font-size: 2.75rem;
+}
+
+.header-img {
+    max-width: 320px;
+    border: 2px solid var(--black);
+    border-radius: .5rem;
+    box-shadow: 5px 5px 0px var(--black);
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        max-width: 800px;
+        margin: 6rem auto;
+    }
+
+    .header-img {
+        max-width: 360px;
+    }
+}

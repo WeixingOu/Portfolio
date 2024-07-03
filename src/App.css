@@ -1,0 +1,78 @@
+:root {
+  --black: #313131;
+  --white: #f8f8f8;
+  --main: #004a99;
+  --title: 'Lora', serif;
+  --body: 'Nunito', sans-serif;
+}
+
+* {
+  color: var(--black);
+  font-family: var(--body);
+}
+
+h1, h2, h3 {
+  font-family: var(--title);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  text-decoration: underline var(--main);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 7px;
+}
+
+section {
+  margin: 4.5rem auto;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    margin: 10rem auto;
+  }
+}
+
+.primary-btn {
+  background-color: var(--main);
+  color: var(--white);
+  box-shadow: 5px 5px 0px var(--black);
+  border: 2px solid var(--black);
+}
+
+.primary-btn:hover {
+  background-color: var(--white);
+  border-color: var(--black);
+  color: var(--black);
+}
+
+.secondary-btn {
+  background-color: var(--white);
+  border-color: var(--main);
+  box-shadow: 5px 5px 0px var(--black);
+  border: 2px solid var(--black);
+}
+
+.secondary-btn:hover {
+  background-color: var(--main);
+  border-color: var(--black);
+  color: var(--white);
+}
+
+.form-control,
+.form-select {
+    border-width: 2px;
+}
+
+.form-control::placeholder {
+    color: gray;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border: 2px solid var(--main);
+    box-shadow: none;
+}
