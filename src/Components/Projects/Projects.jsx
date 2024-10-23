@@ -2,9 +2,10 @@ import './projects.css';
 import { BiSolidFileBlank, BiLogoTypescript, BiLogoGithub, BiLogoFirebase, BiLogoJavascript, BiLogoReact, BiWorld, BiLogoHtml5, BiLogoCss3, BiLogoBootstrap, BiLogoVuejs, BiLogoJava, BiLogoSpringBoot, BiLogoPostgresql } from 'react-icons/bi';
 import { SiExpress, SiMysql } from "react-icons/si";
 import { useTranslation } from 'react-i18next';
-import project1 from '../../assets/projects/projects-homebanking.png'
-import project7 from '../../assets/projects/projects-ecommerce.png'
-import project8 from '../../assets/projects/projects-guitarLA.jpeg'
+import projecthb from '../../assets/projects/projects-homebanking.png';
+import projectp from '../../assets/projects/projects-ecommerce.png';
+import projectgl from '../../assets/projects/projects-guitarLA.jpeg';
+import projecthe from '../../assets/projects/projects-hevent.png';
 
 export default function Projects() {
     const { t } = useTranslation()
@@ -45,32 +46,40 @@ export default function Projects() {
 
     const projectsData = [
         {
-            name: 'GuitarLA',
-            image: project8,
+            name: 'Hevent',
+            image: projecthe,
             text: [t('projectsCard8Text'), t('projectsCard8Text2')],
             onlineLink: 'https://main--guitar-lav.netlify.app/',
             githubLink: 'https://github.com/ValentinaBS/recipe-nest',
             technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js']
         },
         {
+            name: 'Mindhub Bank',
+            image: projecthb,
+            text: [
+                t('projectsCard2Text'),
+                t('projectsCard2Text2')
+            ],
+            onlineLink: '',
+            githubLink: 'https://github.com/WeixingOu/Homebanking-SafeHomeBank',
+            technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js', 'Java', 'Spring', 'PostgreSQL']
+        },
+        {
             name: 'Purity',
-            image: project7,
+            image: projectp,
             text: [t('projectsCard1Text'), t('projectsCard1Text2')],
             onlineLink: '',
             githubLink: 'https://github.com/ValentinaBS/e-commerce-mindhub',
             technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js', 'Java', 'Spring', 'PostgreSQL']
         },
         {
-            name: 'Mindhub Bank',
-            image: project1,
-            text: [
-                t('projectsCard2Text'),
-                t('projectsCard2Text2')
-            ],
-            onlineLink: '',
-            githubLink: 'https://github.com/ValentinaBS/MindhubBankValentinaSanchez',
-            technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js', 'Java', 'Spring', 'PostgreSQL']
-        }
+            name: 'GuitarLA',
+            image: projectgl,
+            text: [t('projectsCard8Text'), t('projectsCard8Text2')],
+            onlineLink: 'https://main--guitar-lav.netlify.app/',
+            githubLink: 'https://github.com/ValentinaBS/recipe-nest',
+            technologies: ['HTML', 'CSS', 'Bootstrap', 'Vue.js']
+        },
     ];
 
     return (
